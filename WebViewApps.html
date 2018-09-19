@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <title>Web View Apps</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        #container{
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+        
+    </style>
+    <script>
+        function clickTipBtn(){
+            window.location = 'tipCalculator.html';
+        }
+        
+        function clickSalaryBtn(){
+            window.location = 'salaryCalculator.html';
+        }
+        
+        function clickSwipe(){
+            window.location = 'swipe.html';
+        }
+        
+        function clickMovie(){
+            window.location = 'movieSearch.html';
+        }
+        
+        function clickHome(){
+            window.location = 'index.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="text-align:center;"> WebView Apps</h1>
+        <p style="padding: 5%; text-align: center; border: 1px solid black;">Here's a collection of small programs I made in the process of learning to program using phoneGap.</p>
+        <button id="tipCalculator" onClick="clickTipBtn()">Tip Calculator</button>
+        <button id="salaryCalculator" onClick="clickSalaryBtn()">Salary Calculator</button>
+        <button id="swipeTest" onClick="clickSwipe()">Swipe Detection</button>
+        <button id="MovieSearch" onClick="clickMovie()">Movie Search</button>
+        
+        <button id="home" onClick="clickHome()">Home</button>
+        
+    </div>
+</body>
+
+</html>

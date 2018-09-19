@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+        var xmlhttp;
+     
+         window.onload = function()
+         {
+             document.getElementById('btnGetInfo').addEventListener('click', getMovieInfo, false);
+             document.getElementById('container').setAttribute("style", "margin: 5%");
+         }
+
+        function getMovieInfo(e)
+        {
+            var title = document.getElementById('title').value;
+            var url = "http://www.omdbapi.com/?t=" + title + "&plot=full&r=json";
+            clear();
+            document.getElementById('title').focus();
+            xmlhttp = new XMLHttpRequest;
+            xmlhttp.onreadystatechange = processData;
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        }
+
+        function processData()
+        {
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+            {
+                var movieJSON = xmlhttp.responseText;
+                movieJSON = JSON.parse(movieJSON);
+                var title = movieJSON.Title;
+                var year = movieJSON.Year;
+                var actors = movieJSON.Actors;
+                var plot = movieJSON.Plot;
+                var rating = movieJSON.Rated;
+                var posterURL = movieJSON.Poster;
+
+                document.getElementById('poster').src = posterURL;
+                document.getElementById('poster').setAttribute("style", "float: right; width: 35%");
+                document.getElementById('movieTitle').innerHTML = "<h1>" + title + "[" + rating + "]</h1>";
+                document.getElementById('movieYear').innerHTML += "<h3>" + year + "</h3>";
+                document.getElementById('movieActors').innerHTML = "<p>" + actors + "</p>";
+                document.getElementById('moviePlot').innerHTML = "<p>" + plot + "</p>";
+            }
+        }
+
+        function clear()
+        {
+            document.getElementById('movieTitle').innerHTML = "";
+            document.getElementById('movieYear').innerHTML = "<img id=\"poster\" />";
+            document.getElementById('movieActors').innerHTML = "";
+            document.getElementById('moviePlot').innerHTML = "";
+        }
+        
+        function backBtn()
+        {
+            window.location = 'WebViewApps.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <label for="title">Movie Title</label>
+        <input type="text" id="title" autofocus/>
+        <button id="btnGetInfo">Get Movie Info</button>
+        
+        <div id="movieTitle"></div>
+        <div id="movieYear"></div>
+        <div id="movieActors"></div>
+        <div id="moviePlot"></div>
+    </div>
+    
+    <div id="backBtn">
+        <button id="backBtn" onClick="backBtn()">Back</button>
+    </div>
+</body>
+
+</html>

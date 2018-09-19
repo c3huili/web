@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        window.onload = function()
+        {
+            document.getElementById('hourlyAmount').onkeyup = calculateAnnual;
+            document.getElementById('hours').onkeyup = calculateAnnual;
+            document.getElementById('days').onkeyup = calculateAnnual;
+            document.getElementById('annualAmount').onkeyup = calculateHourly;
+            document.getElementById('container').setAttribute("style", "padding-right: 5%; padding-left: 5%;");
+        }
+        
+        function calculateAnnual()
+        {
+            var hours = document.getElementById('hours').value;
+            var days = document.getElementById('days').value;
+            
+            var hourlyAmount = document.getElementById('hourlyAmount').value;
+            
+            var out = hourlyAmount * hours * days * 52;
+            document.getElementById('annualAmount').value = out.toFixed(2);
+        }
+        
+        function calculateHourly()
+        {
+            var hours = document.getElementById('hours').value;
+            var days = document.getElementById('days').value;
+            
+            var annualAmount = document.getElementById('annualAmount').value;
+            
+            var out = annualAmount / (hours * days * 52 );
+            document.getElementById('hourlyAmount').value = out.toFixed(2);
+        }
+        
+        function backBtn()
+        {
+            window.location = 'WebViewApps.html';
+        }
+            
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="text-align:center;"> Salary Calculator</h1>
+        <div id="default">
+            <h2>Hours Per Day</h2>
+            <input type="number" style="text-align: right;" value="8" id="hours" />
+            <h2>Days Per Week</h2>
+            <input type="number" style="text-align: right;" value="5" id="days" />
+        </div>
+        <div id="inputs">
+            <h2>Hourly: </h2>
+            <input type="number" style="text-align: right;" placeholder="Hourly" id="hourlyAmount" />
+            <h2>Annual: </h2>
+            <input type="number" style="text-align: right;" placeholder="Annual" id="annualAmount" />
+        </div>
+        <div id="backBtn">
+            <button id="backBtn" onClick="backBtn()">Back</button>
+        </div>
+        
+    </div>
+</body>
+
+</html>

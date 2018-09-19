@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ce Hui's Page</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="img/li_3.ico">
+        <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="sweetalert-master/dist/sweetalert.css">
+        <script src="js/script.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <meta name="author" content="Ce Hui Li">
+        <meta name="description" content="Personal portfolio webpage designed and developed for the purposes of putting into practice knowledge and skills I learned during college.">
+        <meta name="keywords" content="Personal, portfolio, Computer Science, resume, HTML, CSS, Javascript, C++, Java, Android, photography, koi, autumn, leaf, sunset, flowers, pictures of friends, programming projects, android app, embedded systems, personal site">
+        
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-71023012-1', 'auto');
+              ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body>
+    
+        <header id="banner_wrap">
+            <div id="inner_element">
+                <h1>Ce Hui Li</h1>
+                <h3>Computer Science Graduate / Photographer / Idealist / Thinker / Jack of Many Trades</h3>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a id="midnight" onclick="changeCSS()">Midnight</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#past_projects">Past Projects</a></li>
+                <li><a href="#contact_me">Contact Me</a></li>
+                <li><a href="WebViewApps.html">Web View Apps</a></li>
+            </ul>
+        </nav>
+<!--INTRODUCTION SECTION-->
+        <section id="introduction">
+            <section id="pic">
+                <img id="profile" src="img/profile_pic.jpg" alt="profile picture">
+            </section>
+            <aside>
+                <h2>Introduction</h2>
+                <p>Welcome to my portfolio website. My name is Ce Hui Li and I built this website to showcase the knowledge and skills I learned throughout college and how I applied them. Along with my resume and past projects I decided to include some photos which I have taken. Feel free to contact me with questions and input regarding my website or anything you want to talk to me about.</p>
+            </aside>
+        </section>
+<!-- RESUME SECTION-->
+        <section id="resume">
+            <section class="resume_section">
+                <h2>Ce Hui Li</h2>
+                <h4 id="info"><a href="mailto:cel@uci.edu">cel@uci.edu</a> | <a href="mailto:c3huili@gmail.com">c3huili@gmail.com</a> | <a href="tel:+16265920835">(626)592-0835</a></h4>
+            </section>
+
+            <section class="resume_section">
+                <h4>EDUCATION</h4>
+                <p class="school"><Strong>University of California, Irvine:</Strong> <em>Fall 2013 - Spring 2016</em></p>
+                <ul>
+                    <li>Bachelors in Sciences in the field of Computer Science with emphasis on Networked Systems</li>
+                </ul>
+                <p class="school"><Strong>Pasadena City College:</Strong> <em>Fall 2010 - Summer 2013</em></p>
+                <ul>
+                    <li>Transferred with <span title="IGETC is the general education transfer requirements that one can transfer with">IGETC</span></li>
+                    <li>Computer Science Club Secretary</li>
+                </ul>
+            </section>
+            
+            <section class="resume_section">
+                <h4>EXPERIENCE</h4>
+                <ul>
+                    <Strong>Ascendia Media: Junior QA,</Strong><em> April 2016 - July 2016</em>
+                    <li>Tested websites design for responsiveness.</li>
+                    <li>Function tested websites for correctness, alerts, and transaction processing.</li>
+                    <li>Built campaigns on custom CRM which were used as specifications for building websites.</li>
+                    <Strong>R2LFashion: Webmaster,</Strong><em> July, 2015 - September, 2015</em>
+                    <li>Updated website with edited photos in photoshop.</li>
+                    <li>Helped promote the products and website on various social media platforms.</li>
+                    <Strong>LA'S BEST Afterschool Program: </Strong><em>Volunteer, 2007 - 2010</em>
+                    <li>Coordinated with staff members to help set up activities.</li>
+                    <li>Assisted students with homework and activities.</li>
+                    <li>Translator between English speaking staff members and Chinese speaking parents.</li>
+                </ul>
+            </section>
+
+            <section class="resume_section">
+                <h4>SKILLS</h4>
+                <ul>
+                    <li><Strong>Operating Systems: </Strong>Windows and Linux</li>
+                    <li><Strong>IDEs Used: </Strong>Vim, Emacs, Microsoft Visual Studios Netbeans, codeblocks eclipse, Atmel Studio, Android Studios</li>
+                    <li><Strong>Computer Languages: </Strong>C++, C, Java, JUnit, Assembly Language (MASM), shell scripting (bash), Makefile, HTML, HTML5, CSS, Javascript, cmd</li>
+                    <li><Strong>Software Knowledge: </Strong>Microsoft Office, Putty, Lightroom, Photoshop</li>
+                    <li><Strong><span title="Other than English">Spoken Languages: </span></Strong>Competent in Taishanese and Cantonese, Basic in Mandarin</li>
+                    <li><strong>Other:</strong> Photography, Communication, Embedded Systems Soldering, Team Player, Quality Assurance, Chinese Calligraphy</li>
+                </ul>
+            </section>
+
+            <section class="resume_section">
+                <h4>PROJECTS</h4>
+                <ul>
+                    <Strong>Simple Salary Calculator</Strong>
+                    <li>Used Android Studios to develop application that calculates salary.</li>
+                    <li>Calculates annual salary based on hourly rate and hourly rate based on annual salary.</li>
+                    <Strong>Portfolio Website</Strong>
+                    <li>Designed and developed a responsive webapge using HTML, CSS, and Javascript.</li>
+                    <li>Integrated a midnight feature which changes CSS files making it easier to view during the evening.</li>
+                    <li>Implemented design changes after doing user research and user testing.</li>
+                    <li>Designed a secondary landing page with HTML 5.</li>
+                    <Strong>Embedded Systems Final Project</Strong>
+                    <li>Designed and implemented a light sensitive alarm which detects varying changes in light levels using C programming in Atmel Studios.</li>
+                    <li>Soldered LCD components and wired them to a breadboard as a visual time-keeping mechanic.</li>
+                    <li>Implemented speaker alarm to deter intruders.</li>
+                    <Strong>hackUCI: Spring 2014</Strong>
+                    <li>Working in a group of four, we prototyped an android application that determined whether the application user was safe enough to drive after drinking alcohol.</li>
+                    <li>Worked on the front-end with basic xml coding and developed use-cases for the application.</li>
+                    <Strong>Data Structures Final Project (Pasadena City College)</Strong>
+                    <li>Through paired programming, we recreated <a href="http://en.wikipedia.org/wiki/Egyptian_Ratscrew">Egyptian War</a> as a multiplayer application.</li>
+                    <li>Using the deque container, I implemented the gameplay in C++.</li>
+                </ul>
+            </section>
+
+            <section class="resume_section">
+                <h4>RELATED COURSE WORK</h4>
+                <p style="text-align:left">Data Structures, Concepts of Programming Languages, Project in Operating Systems, Design and Analysis of Algorithms, Introduction to Data Management, Computer Networks, Embedded Computer Systems, Discrete Mathematics, Software Design, Test and Quality Assurance, User Interaction</p>
+            </section>
+            
+            <section class="resume_section">
+                <h4>Currently in the Process of learning:</h4>
+                <ul>
+                    <li>PHP</li>
+                    <li>C#</li>
+                    <li>Android Development</li>
+                    <li><a href="WebViewApps.html">PhoneGap</a></li>
+                </ul>
+            </section>
+            
+            <p>Printer-Friendly version: <a href="resume.pdf">Resume</a></p>
+        </section>
+<!--Photography-->
+        <section id="photography">
+            <section id="Intro">
+                <h2>Photography</h2>
+                <p>I may not be a professional photographer but I would like to capture the moments as they come. It might look like I just take pictures of flowers, but I do enjoy many aspects of nature has to offer. Here are some of my favorite photos that I have taken with my Canon T3i DSLR.</p>
+            </section>
+            <section id="2image">
+                <a href="img/large_img/koi_fish.JPG"><img id="side-by-side" src="img/small_img/koi_fish-min.jpg" alt="koi fish"></a>
+                <a href="img/large_img/purple_flower.JPG"><img id="side-by-side" src="img/small_img/purple_flower-min.jpg" alt="purple flower"></a>
+                <a href="img/large_img/autumn.jpg"><img id="side-by-side" src="img/small_img/autumn_min.jpg" alt="autumn"></a>
+                <a href="img/large_img/bokeh.jpg"><img id="side-by-side" src="img/small_img/bokeh_min.jpg" alt="sunset"></a>
+            </section>
+            <section id="4image">
+                <a href="img/large_img/vertical_flower1.jpg"><img id="four_img" src="img/small_img/vertical_flower1-min.jpg" alt="flower 1"></a>
+                <a href="img/large_img/vertical_flower2.jpg"><img id="four_img" src="img/small_img/vertical_flower2-min.jpg" alt="flower 2"></a>
+                <a href="img/large_img/vertical_flower3.jpg"><img id="four_img" src="img/small_img/vertical_flower3-min.jpg" alt="flower 3"></a>
+                <a href="img/large_img/birds.jpg"><img id="four_img" src="img/small_img/birds_min.jpg" alt="birds image"></a>
+            </section>
+            <section id="single_img">
+                <a href="img/large_img/sunset.jpg"><img id="single_img" src="img/small_img/sunset_min.jpg" alt=""></a>
+            </section>
+            <section id="Intro">
+                <p>And here are a few pictures that I have taken of friends.</p>
+            </section>
+            <section id="3image">
+                <a href="img/large_img/branch_frame.jpg"><img id="three_img" src="img/large_img/branch_frame.jpg" alt="branches framing a person"></a>
+                <a href="img/large_img/profile.jpg"><img id="three_img" src="img/large_img/profile.jpg" alt="profile view of a girl"></a>
+                <a href="img/large_img/heart.jpg"><img id="three_img" src="img/large_img/heart.jpg" alt="heart silhouette"></a>
+            </section>
+        </section>
+<!--Past Projects-->
+        <section id="past_projects">
+            <h2>Past Projects</h2>
+            <section class="project">
+                <section id="salary_calc">
+                    <img id="salary_pic" src="img/salaryCalculatorBackground.png" alt="salary calculator icon">
+                </section>
+                <aside>
+                    <h2>Simple Salary Calculator</h2>
+                    <p>While looking for work and trying to learn new things I created a practical tool to use while job hunting and applying what I learned in the process. Simple salary calculator is an android application that calculates the users hourly wage and annual wage. I did not include tax because it changes depending on the person and their wage.</p><p>Feel free to check out my app in the google play store and any feedback is appreciated.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.cehuili.salary_calculator" onclick="return leave()"><em>Simple Salary Calculator</em></a>
+                </aside>
+            </section>
+            <section class="project">
+                <section id="swd_intro">
+                    <h2>Stand, Walk, Drive</h2>
+                    <p>Stand, Walk, Drive was an mobile application I had thought about developing. At the time I lacked android developing experience, but <span onclick="hackathon()"><Strong>hackUCI</Strong></span> gave me the opportunity to learn from others so I pitched the idea to three other students and we got together and prototyped the application. The purpose of the application was to use the smartphone's existing accelerometer to determine whether a person was lucid enough to drive. We managed to finish a working but rudimentary application.</p>
+                    <p>The prototype which was built in Eclipse was able to objectively determine whether a person was lucid enough to drive by having them walk in a straight line for a few seconds. We gave the application arbitrary values to determine how much sway a person could have in their walking. If the opportunity should present itself, I would like to continue the application with user research and testing to give the application more accurate values in the hopes that it prevents people from attempting to drive while under the influence of alcohol and other intoxicants.</p>
+                </section>
+                <aside id="swd_img">
+                    <h4>Sucess Run</h4>
+                    <p>5 second walk time without shaking phone</p>
+                    <div id="project1_photos">
+                        <img class="app_img" src="img/app/app_first.png" alt="app image start">
+                        <img class="app_img" src="img/app/app_second.png" alt="app image calibrate">
+                        <img class="app_img" src="img/app/app_third.png" alt="app image walk">
+                        <img class="app_img" src="img/app/app_fourth.png" alt="app image success">
+                    </div>
+                    <h4>Fail Run</h4>
+                    <p>5 second walk time with shaking phone</p>
+                    <div id="project1_photos">
+                        <img class="app_img" src="img/app/app_first.png" alt="app image start">
+                        <img class="app_img" src="img/app/app_second.png" alt="app image calibrate">
+                        <img class="app_img" src="img/app/app_third.png" alt="app image walk">
+                        <img class="app_img" src="img/app/app_fifth.png" alt="app image fail">
+                    </div>
+                </aside>
+            </section>
+            <section class="project">
+                <section id="embedded">
+                    <h3>Embedded Systems Final Project</h3>
+                    <p>
+                    Since we had creative freedom for our final project, I decided to draw inspiration from action and spy movies from my childhood and created a lazer trip alarm. I say lazer trip alarm but I took it a different direction and made it a general light sensative trip alarm that would sample the light levels whether it be from a lazer of regular room lighting. Any deviation from light levels such as increase or decrease light levels would trigger the alarm.
+                    </p>
+                </section>
+                <section>
+                    <img id="breadboard_img" src="img/lazer_alarm.jpg" alt="lazer alarm">
+                </section>
+                <p>The project consists of the program written in C in atmel studios. And the hardware components were embedded onto a breadboard. The LCD was to display the settings that took user input from the numpad. Its secondary function was to display when the alarm was tripped. <br>This project made use of:
+                    <li>A numpad for input</li>
+                    <li>A LCD for output</li>
+                    <li>A speaker for output</li>
+                    <li>A crystal for time keeping</li>
+                    <li>A photoresistor for input</li>
+                    <li>Other parts include, programmer, regulator, resistor, 9v battery, and LED as indicator</li>
+                    <li>Lastly my induction speaker to amplify the regular speaker</li>
+                </p>
+            </section>
+            
+            <section class="project">
+                <section id="site">
+                <h3>Portfolio Website</h3>
+                <p>What started out as wanting to build a portfolio website has evolved into a learning experience in user experiences in which has helped me become a better software developer. I have gone through a few iterations that have ultimately lead to what you the viewer are seeing today. </p>
+                <p>Before how it looks now, my front page looked like this. People weren't a fan of the green. Another major flaw I saw was that no one knew what the midnight feature was. But I made sure that people know now. And the small change I made to the contact page makes it just look overall better from what it looked like before.</p>
+                <p>And if you are viewing this single page scroller, I chose to follow the multipage layout and tried the single-page scoller layout. Any feedback on either layouts is appreciated.</p>
+                </section>
+                <section id="2image">
+                    <a href="img/portfolio/homepage.png"><img id="side-by-side" src="img/porfolio/homepage.png"></a>
+                    <a href="img/portfolio/contact.png"><img id="side-by-side" src="img/porfolio/contact.png"></a>
+                </section>
+            </section>
+            
+            <secton class="project">
+                <h3>Git</h3>
+                <p style="padding-bottom: 35px;">For examples of a few of my coursework projects in college, visit my <a href="https://github.com/c3huili/Coursework">GitHub</a>.
+                </p>
+            </secton>
+            
+        </section>
+        
+<!--Contact-->
+        <section id="contact_me" style="padding-bottom:25px">
+            <h2>Contact Me</h2>
+            <p>You can email me at: <a href="mailto:c3huili@gmail.com">c3huili@gmail.com</a></p>
+        </section>
+<!--Footer-->
+        <footer>
+            <section id="social">
+                <h4>Follow Me On:</h4>
+                <a href="http://www.instagram.com/some.azn.guy"><img src="img/instagram.png" alt="instagram page"></a>
+                <a href="http://www.facebook.com/cehuiliphotography"><img src="img/facebook.png" alt="facebook page"></a>
+                <a href="https://www.linkedin.com/in/ce-hui-li-b78333b8"><img src="img/linkedin-icon.png"></a>
+            </section>
+            <div id="copyright">&copy; Copyright 2016 Ce Hui Li, All Rights Reserved.</div>
+        </footer>
+    </body>
+</html>

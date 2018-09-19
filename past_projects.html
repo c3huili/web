@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Past Projects</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="img/li_3.ico">
+        <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="sweetalert-master/dist/sweetalert.css">
+        <script src="js/script.js"></script>
+        <meta name="author" content="Ce Hui Li">
+        
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-71023012-1', 'auto');
+              ga('send', 'pageview');
+
+        </script>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a id="midnight" onclick="changeCSS()">Midnight</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html"> Single Page Scroller</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="past_projects.html">Past Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                    <li><a href="WebViewApps.html">Web View Apps</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="past_projects">
+            <h2>Past Projects</h2>
+            <section class="project">
+                <section id="salary_calc">
+                    <img id="salary_pic" src="img/salaryCalculatorBackground.png" alt="salary calculator icon">
+                </section>
+                <aside>
+                    <h2>Simple Salary Calculator</h2>
+                    <p>While looking for work and trying to learn new things I created a practical tool to use while job hunting and applying what I learned in the process. Simple salary calculator is an android application that calculates the users hourly wage and annual wage. I did not include tax because it changes depending on the person and their wage.</p><p>Feel free to check out my app in the google play store and any feedback is appreciated.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.cehuili.salary_calculator" onclick="return leave()"><em>Simple Salary Calculator</em></a>
+                </aside>
+            </section>
+            <section class="project">
+                <section id="swd_intro">
+                    <h2>Stand, Walk, Drive</h2>
+                    <p>Stand, Walk, Drive was an mobile application I had thought about developing. At the time I lacked android developing experience, but <span onclick="hackathon()"><Strong>hackUCI</Strong></span> gave me the opportunity to learn from others so I pitched the idea to three other students and we got together and prototyped the application. The purpose of the application was to use the smartphone's existing accelerometer to determine whether a person was lucid enough to drive. We managed to finish a working but rudimentary application.</p>
+                    <p>The prototype which was built in Eclipse was able to objectively determine whether a person was lucid enough to drive by having them walk in a straight line for a few seconds. We gave the application arbitrary values to determine how much sway a person could have in their walking. If the opportunity should present itself, I would like to continue the application with user research and testing to give the application more accurate values in the hopes that it prevents people from attempting to drive while under the influence of alcohol and other intoxicants.</p>
+                </section>
+                <aside id="swd_img">
+                    <h4>Sucess Run</h4>
+                    <p>5 second walk time without shaking phone</p>
+                    <div id="project1_photos">
+                        <img class="app_img" src="img/app/app_first.png" alt="app image start">
+                        <img class="app_img" src="img/app/app_second.png" alt="app image calibrate">
+                        <img class="app_img" src="img/app/app_third.png" alt="app image walk">
+                        <img class="app_img" src="img/app/app_fourth.png" alt="app image success">
+                    </div>
+                    <h4>Fail Run</h4>
+                    <p>5 second walk time with shaking phone</p>
+                    <div id="project1_photos">
+                        <img class="app_img" src="img/app/app_first.png" alt="app image start">
+                        <img class="app_img" src="img/app/app_second.png" alt="app image calibrate">
+                        <img class="app_img" src="img/app/app_third.png" alt="app image walk">
+                        <img class="app_img" src="img/app/app_fifth.png" alt="app image fail">
+                    </div>
+                </aside>
+            </section>
+            <section class="project">
+                <section id="embedded">
+                    <h3>Embedded Systems Final Project</h3>
+                    <p>
+                    Since we had creative freedom for our final project, I decided to draw inspiration from action and spy movies from my childhood and created a lazer trip alarm. I say lazer trip alarm but I took it a different direction and made it a general light sensative trip alarm that would sample the light levels whether it be from a lazer of regular room lighting. Any deviation from light levels such as increase or decrease light levels would trigger the alarm.
+                    </p>
+                </section>
+                <section>
+                    <img id="breadboard_img" src="img/lazer_alarm.jpg" alt="lazer alarm">
+                </section>
+                <p>The project consists of the program written in C in atmel studios. And the hardware components were embedded onto a breadboard. The LCD was to display the settings that took user input from the numpad. Its secondary function was to display when the alarm was tripped. <br>This project made use of:
+                    <li>A numpad for input</li>
+                    <li>A LCD for output</li>
+                    <li>A speaker for output</li>
+                    <li>A crystal for time keeping</li>
+                    <li>A photoresistor for input</li>
+                    <li>Other parts include, programmer, regulator, resistor, 9v battery, and LED as indicator</li>
+                    <li>Lastly my induction speaker to amplify the regular speaker</li>
+                </p>
+            </section>
+            
+            <section class="project">
+                <section id="site">
+                <h3>Portfolio Website</h3>
+                <p>What started out as wanting to build a portfolio website has evolved into a learning experience in user experiences in which has helped me become a better software developer. I have gone through a few iterations that have ultimately lead to what you the viewer are seeing today. </p>
+                <p>Before how it looks now, my front page looked like this. People weren't a fan of the green. Another major flaw I saw was that no one knew what the midnight feature was. But I made sure that people know now. And the small change I made to the contact page makes it just look overall better from what it looked like before.</p>
+                <p>And if you are viewing this single page scroller, I chose to follow the multipage layout and tried the single-page scoller layout. Any feedback on either layouts is appreciated.</p>
+                </section>
+                <section id="2image">
+                    <a href="img/portfolio/homepage.png"><img id="side-by-side" src="img/porfolio/homepage.png"></a>
+                    <a href="img/portfolio/contact.png"><img id="side-by-side" src="img/porfolio/contact.png"></a>
+                </section>
+            </section>
+            
+            <secton class="project">
+                <h3>Git</h3>
+                <p style="padding-bottom: 35px;">For examples of a few of my coursework projects in college, visit my <a href="https://github.com/c3huili/Coursework">GitHub</a>.
+                </p>
+            </secton>
+        </section>
+        
+        <footer>
+            <section id="social">
+                <h4>Follow Me On:</h4>
+                <a href="http://www.instagram.com/some.azn.guy"><img src="img/instagram.png" alt="instagram page"></a>
+                <a href="http://www.facebook.com/cehuiliphotography"><img src="img/facebook.png" alt="facebook page"></a>
+                <a href="https://www.linkedin.com/in/ce-hui-li-b78333b8"><img src="img/linkedin-icon.png"></a>
+            </section>
+            <div id="copyright"><a href="final-project.html" >&copy;</a> Copyright 2016 Ce Hui Li, All Rights Reserved.</div>
+        </footer>
+    </body>
+</html>

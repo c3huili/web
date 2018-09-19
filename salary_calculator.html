@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ce Hui's Page</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="img/li_3.ico">
+        <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="sweetalert-master/dist/sweetalert.css">
+        <script src="js/script.js"></script>
+        <meta name="author" content="Ce Hui Li">
+        
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-71023012-1', 'auto');
+              ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <a href="#" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a id="midnight" onclick="changeCSS()">Midnight</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="past_projects.html">Past Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                    <li><a href="final-project.html">     </a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="introduction">
+            <p>The best way to learn something new is to put it into practice. So here's me practicing php by creating this page that calculates salaries.</br></p>
+        </section>
+        
+        <div>
+            <h3>Defaults</h3>
+            <form action="calculator.php" method="post">
+                <table>
+                    <tr>
+                        <td>Hours per day: </td>
+                        <td align="center"><input type="number" name="hours" size="5" value="8" /></td>
+                    </tr>
+                    <tr>
+                        <td>Days per week: </td>
+                        <td align="center"><input type="number" name="days" size="5" value="5" /></td>
+                    </tr>
+                    <tr>
+                        <td>Weeks per month: </td>
+                        <td align="center"><input type="number" name="weeks" size="5" value="4" /></td>
+                    </tr>
+                    <tr>
+                        <td>Months in a year: </td>
+                        <td align="center"><input type="number" name="month" size="5" value="12" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="hourly">
+            <h3>Hourly to annual:</h3>
+            <h4>Converts your hourly salary to annual salary before taxes.</h4>
+            <form></form>
+        </div>
+        
+        <footer>
+            <section id="social">
+                <h4>Follow Me On:</h4>
+                <a href="http://www.instagram.com/some.azn.guy"><img src="img/instagram.png" alt="instagram page"></a>
+                <a href="http://www.facebook.com/cehuiliphotography"><img src="img/facebook.png" alt="facebook page"></a>
+                <a href="https://www.linkedin.com/in/ce-hui-li-b78333b8"><img src="img/linkedin-icon.png"</a>
+            </section>
+            <aside id="copyright">© Copyright 2016 Ce Hui Li, All Rights Reserved.</aside>
+        </footer>
+    </body>
+    
+</html>
