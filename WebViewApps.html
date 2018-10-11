@@ -20,6 +20,26 @@
         
     </style>
     <script>
+        window.onload = function()
+        {
+            if(typeof(Storage)!== "undefined")
+            {
+                var oldLink = document.getElementsByTagName("link").item(0);
+                var temp = localStorage.getItem("style");
+                if(temp === "regular")
+                {
+                    document.getElementById('container').setAttribute("style", "background-color: #fff; color: #323232");
+                }
+                else if(temp === "midnight")
+                {
+                    document.getElementById('container').setAttribute("style", "background-color: #191919; color: #e5e5e5");
+                }
+            }
+            else
+            {
+                swal("Your browser was unable to store the theme variable.");
+            }
+        }
         function clickTipBtn(){
             window.location = 'tipCalculator.html';
         }
