@@ -18,18 +18,19 @@
         .block {
             display: block;
             width: 100%;
-            border: none;
+            border: #191919;
             background-color: #fff;
             padding: 14px 28px;
             font-size: 20px;
-            cursor: pointer;
             text-align: center;
+            
         }
         .textblock
         {
             display: block;
             width: 100%;
             border: none;
+            padding: 14px 28px;
             font-size: 20px;
         }
     </style>
@@ -64,7 +65,8 @@
         function calculateTip()
         {
             var billAmount = document.getElementById('billAmount').value;
-            var taxAmount = document.getElementById('tax').value;
+            var taxAmount = parseFloat(document.getElementById('taxAmount').value);
+
             
             var tip1 = billAmount * 1.15 + taxAmount;
             var tip2 = billAmount * 1.175 + taxAmount;
@@ -91,8 +93,8 @@
 <body>
     <div id="container">
         <h1 style="text-align: center;">Tip Calculator</h1>
-        <input type="number" class="textblock" style="text-align: right;" placeholder="Subtotal" id="billAmount" />
-        <input type="number" class="textblock" style="text-align: right;" placeholder="Tax" id="tax" />
+        <input type="number" class="textblock" style="text-align: right;" placeholder="Subtotal" id="billAmount" /><br/>
+        <input type="number" class="textblock" style="text-align: right;" placeholder="Tax" id="taxAmount" /><br/>
         <br/>
         <button id="btnCalculate" class="block" > Calculate Tip</button>
         <div id="result">
