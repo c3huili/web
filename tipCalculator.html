@@ -15,6 +15,16 @@
     <style>
         #container{ padding: 5px; }
         #result{ padding: 5px; }
+        .block {
+            display: block;
+            width: 100%;
+            border: none;
+            background-color: #4CAF50;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
     </style>
     <script>
         function setAttributes(el, attrs) {
@@ -71,10 +81,11 @@
 </head>
 
 <body>
-    <div id="container" style="background-color: #191919; color: #e5e5e5">
+    <div id="container">
         <h1 style="text-align: center;">Tip Calculator</h1>
         <input type="number" style="text-align: right;" placeholder="Bill Amount" id="billAmount" />
-        <button id="btnCalculate"> Calculate Tip</button>
+        <br/>
+        <button id="btnCalculate" class="block"> Calculate Tip</button>
         <div id="result">
             <h2>15% : <br/>
             17.5% : <br/>
@@ -82,7 +93,7 @@
             </h2>
         </div>
         <div id="backBtn">
-            <button id="backBtn" onClick="backBtn()">Back</button>
+            <button id="backBtn" class="block" onClick="backBtn()">Back</button>
         </div>
     </div>
 </body>
