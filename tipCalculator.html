@@ -43,6 +43,8 @@
         }
         window.onload = function()
         {
+            document.getElementById('billAmount').onkeyup = calculateTip;
+            document.getElementById('taxAmount').onkeyup = calculateTip;
             document.getElementById('btnCalculate').addEventListener('click', calculateTip, false);
             if(typeof(Storage)!== "undefined")
             {
