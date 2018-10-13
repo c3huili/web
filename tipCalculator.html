@@ -13,7 +13,10 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style>
-        #container{ padding: 5px; }
+        #container{ padding: 5px; 
+            height: 100%;
+            width: 100%;
+        }
         #result{ padding: 5px; }
         .block {
             display: block;
@@ -69,7 +72,8 @@
         {
             var billAmount = document.getElementById('billAmount').value;
             var taxAmount = parseFloat(document.getElementById('taxAmount').value);
-
+            
+            if(isNaN(taxAmount)){ taxAmount = 0; }
             
             var tip1 = billAmount * 1.15 + taxAmount;
             var tip2 = billAmount * 1.175 + taxAmount;
