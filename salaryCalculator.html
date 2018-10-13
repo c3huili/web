@@ -12,6 +12,29 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        #container{ padding: 5px; }
+        #result{ padding: 5px; }
+        .block {
+            display: block;
+            width: 100%;
+            border:1px solid #191919;
+            background-color: #fff;
+            padding: 14px 28px;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+        .textblock
+        {
+            display: block;
+            width: 100%;
+            border:1px solid #191919;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-size: 20px;
+        }
+    </style>
     <script>
         window.onload = function()
         {
@@ -57,18 +80,18 @@
         <h1 style="text-align:center;"> Salary Calculator</h1>
         <div id="default">
             <h2>Hours Per Day</h2>
-            <input type="number" style="text-align: right;" value="8" id="hours" />
+            <input class="textblock" type="number" style="text-align: right;" value="8" id="hours" /><br/>
             <h2>Days Per Week</h2>
-            <input type="number" style="text-align: right;" value="5" id="days" />
+            <input class="textblock" type="number" style="text-align: right;" value="5" id="days" /><br/>
         </div>
         <div id="inputs">
             <h2>Hourly: </h2>
-            <input type="number" style="text-align: right;" placeholder="Hourly" id="hourlyAmount" />
+            <input class="textblock" type="number" style="text-align: right;" placeholder="Hourly" id="hourlyAmount" /><br/>
             <h2>Annual: </h2>
-            <input type="number" style="text-align: right;" placeholder="Annual" id="annualAmount" />
+            <input class="textblock" type="number" style="text-align: right;" placeholder="Annual" id="annualAmount" /><br/>
         </div>
         <div id="backBtn">
-            <button id="backBtn" onClick="backBtn()">Back</button>
+            <button class="block" id="backBtn" onClick="backBtn()">Back</button>
         </div>
         
     </div>

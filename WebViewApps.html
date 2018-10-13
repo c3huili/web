@@ -17,7 +17,16 @@
             padding-right: 5%;
             padding-left: 5%;
         }
-        
+        .block {
+            display: block;
+            width: 100%;
+            border:1px solid #191919;
+            background-color: #fff;
+            padding: 14px 28px;
+            font-size: 20px;
+            text-align: center;
+            
+        }
     </style>
     <script>
         window.onload = function()
@@ -66,12 +75,12 @@
     <div id="container">
         <h1 style="text-align:center;"> WebView Apps</h1>
         <p style="padding: 5%; text-align: center; border: 1px solid black;">Here's a collection of small programs I made in the process of learning to program using phoneGap.</p>
-        <button id="tipCalculator" onClick="clickTipBtn()">Tip Calculator<br/></button>
-        <button id="salaryCalculator" onClick="clickSalaryBtn()">Salary Calculator<br/></button>
-        <button id="swipeTest" onClick="clickSwipe()">Swipe Detection<br/></button>
-        <button id="MovieSearch" onClick="clickMovie()">Movie Search<br/></button>
+        <button class="block" id="tipCalculator" onClick="clickTipBtn()">Tip Calculator<br/></button>
+        <button class="block" id="salaryCalculator" onClick="clickSalaryBtn()">Salary Calculator<br/></button>
+        <button class="block" id="swipeTest" onClick="clickSwipe()">Swipe Detection<br/></button>
+        <button class="block" id="MovieSearch" onClick="clickMovie()">Movie Search<br/></button>
         
-        <button id="home" onClick="clickHome()">Home</button>
+        <button class="block" id="home" onClick="clickHome()">Home</button>
         
     </div>
 </body>
